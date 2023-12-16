@@ -3,9 +3,9 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800"><?php echo $title ?></h1>
 </div>
-<?php echo $this->session->flashdata('pesan') ?>
 
-<a class="mb-2 mt-2 btn btn-sm btn-success" href="<?php echo base_url('admin/dataPegawai/tambahData')?>"><i class="fas fa-plus"></i> Tambah Pegawai</a>
+<a class="mb-2 mt-2 btn btn-sm btn-success" href="<?php echo base_url('admin/dataPegawai/tambahData/')?>"><i class="fas fa-plus">    
+</i> Tambah Pegawai</a>
 <table class="table table-striped table-bordered">
     <tr>
         <th class="text-center">No</th>

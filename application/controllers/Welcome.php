@@ -19,6 +19,8 @@ class Welcome extends CI_Controller {
 			if($cek == FALSE){
 				redirect('welcome');
 			}else{
+				$this->session->set_userdata('id_pegawai', $cek->id_pegawai);
+
 				switch ($cek->hak_akses){
 					case 1 : redirect('admin/dashboard');
 						break;

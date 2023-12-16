@@ -6,7 +6,7 @@
 
 <div class="card" style="width: 60%; margin-bottom:100px">
     <div class="card-body">
-        <form method="POST" action="<?php echo base_url('admin/dataPegawai/tambahDataAksi') ?>" enctype="multipart/form-data"> 
+        <form method="POST" action="<?php echo base_url('admin/dataPegawai/tambahDataAksi') ?>"> 
             <div class="form-group">
                 <label>NIK</label>
                 <input type="number" name="nik" class="form-control">

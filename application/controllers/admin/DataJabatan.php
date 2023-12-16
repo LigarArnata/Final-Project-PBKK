@@ -75,10 +75,6 @@ class DataJabatan extends CI_Controller{
             );
 
             $this->penggajianModel->update_data('data_jabatan', $data, $where);
-            $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Data berhasil diupdate!</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>');
 
             redirect('admin/dataJabatan');
 
@@ -95,11 +91,6 @@ class DataJabatan extends CI_Controller{
     public function deleteData($id){
         $where = array ('id_jabatan' => $id);
         $this->penggajianModel->delete_data($where, 'data_jabatan');
-        $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Data berhasil dihapus!</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>');
-
         redirect('admin/dataJabatan');
     }
 

@@ -17,45 +17,20 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/dashboard')?>">
+                <a class="nav-link" href="<?php echo base_url('pegawai/dashboard')?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-
-            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa fa-database"></i>
-                    <span>Master Data</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url('admin/dataPegawai')?>">Data Pegawai</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/dataJabatan')?>">Data Jabatan</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/dataPenggajian')?>">Data Gaji</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/potonganGaji')?>">Data Potongan Gaji</a>
-                    </div>
-                </div>
+                <a class="nav-link" href="<?php echo base_url('pegawai/dataGaji')?>">
+                    <i class="fas fa-fw fa-money-check-alt"></i>
+                    <span>Data Gaji</span></a>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="far fa-fw fa-copy"></i>
-                    <span>Laporan</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url('admin/laporanPegawai')?>">Laporan Pegawai</a>
-                        <a class="collapse-item" href="<?php echo base_url('admin/laporanGaji')?>">Laporan Gaji</a>
-                    </div>
-                </div>
-            </li>
+            
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('ubahPassword')?>">
+                <a class="nav-link" href="<?php echo base_url('pegawai/ubahPassword')?>">
                     <i class="fas fa-fw fa-lock"></i>
                     <span>Ubah Password</span></a>
             </li>
